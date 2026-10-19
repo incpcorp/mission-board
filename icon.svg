@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#1e1b4b" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- 떠다니는 별 -->
+  <g fill="#fff" opacity=".55">
+    <circle cx="88" cy="110" r="7"/><circle cx="430" cy="92" r="5"/><circle cx="452" cy="400" r="8"/><circle cx="70" cy="420" r="5"/>
+    <path d="M400 150l6 14 15 1-11 10 3 15-13-8-13 8 3-15-11-10 15-1z"/>
+  </g>
+  <!-- 보드 카드 -->
+  <g filter="url(#sh)">
+    <rect x="96" y="120" width="320" height="300" rx="36" fill="url(#card)"/>
+    <!-- 클립 -->
+    <rect x="196" y="92" width="120" height="56" rx="20" fill="#f59e0b"/>
+    <rect x="216" y="108" width="80" height="24" rx="12" fill="#fde68a"/>
+  </g>
+  <!-- 체크 항목 3줄 -->
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="18">
+    <rect x="136" y="188" width="44" height="44" rx="12" fill="#22c55e" stroke="none"/>
+    <path d="M148 211l10 10 20-22" stroke="#fff" stroke-width="10"/>
+    <path d="M206 210h150" stroke="#c7d2fe"/>
+    <rect x="136" y="262" width="44" height="44" rx="12" fill="#3b82f6" stroke="none"/>
+    <path d="M148 285l10 10 20-22" stroke="#fff" stroke-width="10"/>
+    <path d="M206 284h120" stroke="#c7d2fe"/>
+    <rect x="136" y="336" width="44" height="44" rx="12" fill="#fff" stroke="#e11d48"/>
+    <path d="M206 358h140" stroke="#c7d2fe"/>
+  </g>
+  <!-- 점수 별 -->
+  <g transform="translate(388 372)">
+    <circle r="54" fill="#fbbf24"/>
+    <path d="M0-30l9 19 21 3-15 14 4 21-19-10-19 10 4-21-15-14 21-3z" fill="#fff"/>
+  </g>
+</svg>
