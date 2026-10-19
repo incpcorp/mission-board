@@ -1,6 +1,6 @@
 {
-  "name": "우리집 미션 보드",
-  "short_name": "미션 보드",
+  "name": "리하단하 미션보드",
+  "short_name": "리하단하",
   "description": "리하·단하 과제 · 점수 · 칭찬 · 상",
   "start_url": "./index.html",
   "scope": "./",
